@@ -89,39 +89,6 @@ export const formations: Formation[] = [
     })
   },
   {
-    id: 'hello',
-    name: 'HELLO Text',
-    description: 'Spells out "HELLO"',
-    positions: [
-      // H
-      ...Array.from({ length: 8 }, (_, i) => ({ x: -30, y: (i - 3.5) * 3, z: 0, color: '#ff6b6b' })),
-      ...Array.from({ length: 8 }, (_, i) => ({ x: -25, y: (i - 3.5) * 3, z: 0, color: '#ff6b6b' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: -30 + i, y: 0, z: 0, color: '#ff6b6b' })),
-      // E
-      ...Array.from({ length: 8 }, (_, i) => ({ x: -20, y: (i - 3.5) * 3, z: 0, color: '#4ecdc4' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: -20 + i, y: 10.5, z: 0, color: '#4ecdc4' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: -20 + i, y: 0, z: 0, color: '#4ecdc4' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: -20 + i, y: -10.5, z: 0, color: '#4ecdc4' })),
-      // L
-      ...Array.from({ length: 8 }, (_, i) => ({ x: -10, y: (i - 3.5) * 3, z: 0, color: '#45b7d1' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: -10 + i, y: -10.5, z: 0, color: '#45b7d1' })),
-      // L
-      ...Array.from({ length: 8 }, (_, i) => ({ x: 0, y: (i - 3.5) * 3, z: 0, color: '#96ceb4' })),
-      ...Array.from({ length: 5 }, (_, i) => ({ x: 0 + i, y: -10.5, z: 0, color: '#96ceb4' })),
-      // O
-      ...Array.from({ length: 12 }, (_, i) => {
-        const angle = (i / 12) * Math.PI * 2;
-        const radius = 8;
-        return {
-          x: 15 + Math.cos(angle) * radius,
-          y: Math.sin(angle) * radius,
-          z: 0,
-          color: '#ffd93d'
-        };
-      })
-    ]
-  },
-  {
     id: '2025',
     name: '2025 Text',
     description: 'New Year 2025',
